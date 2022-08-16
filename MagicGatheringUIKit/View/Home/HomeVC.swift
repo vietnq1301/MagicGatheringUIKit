@@ -12,44 +12,23 @@ import NVActivityIndicatorView
 
 class HomeVC: BaseViewController {
     
-    //    enum Section: Hashable {
-    //        case header
-    //        case main
-    //    }
-    //
-    //    enum SectionItems: Hashable {
-    //        case header([Card])
-    //        case main([Card])
-    //    }
-    //
-    //
-    //
-    //    typealias Snapshot = NSDiffableDataSourceSnapshot<Section, SectionItems>
-    //    typealias DataSource = UITableViewDiffableDataSource<Section, SectionItems>
-    //    private lazy var dataSource = setupDataSource()
-    
     enum CellStyles {
         case image
         case checklist
         case textOnly
     }
+    
     private var style: CellStyles = .checklist
-    private var viewModel : HomeViewModel = HomeViewModel()
+    private var viewModel: HomeViewModel = HomeViewModel()
     private let tableView = UITableView()
     private let searchControleller = UISearchController()
-    
-    
-    
+
     override func setupUI() {
         setupLayout()
         setupTableView()
         setupNavigationBar()
     }
-    
-    override func setupData() {
         
-    }
-    
     override func bindingToView() {
         viewModel.$isLoading
             .sink { isLoading in
@@ -64,8 +43,6 @@ class HomeVC: BaseViewController {
                 }
             }
             .store(in: &subscriptions)
-        
-        
     }
     
     func setupLayout() {
@@ -96,9 +73,7 @@ class HomeVC: BaseViewController {
             .store(in: &subscriptions)
 
         searchControleller.searchBar.showsBookmarkButton = true
-        
-
-        
+    
         let options = UIBarButtonItem(title: "", image: .init(systemName: "ellipsis"), primaryAction: nil, menu: setupOptionsMenu())
         
         navigationItem.rightBarButtonItems = [options]
@@ -120,30 +95,20 @@ class HomeVC: BaseViewController {
 
     func tapOnImage() {
         style = .image
-        Task {
-            await startAnimating()
-            tableView.reloadData()
-            if !viewModel.data.isEmpty {
-                scrollToFirstRow()
-            }
-            await stopAnimating()
-        }
+        reloadTableView()
     }
     
     func tapOnChecklist() {
         style = .checklist
-        Task {
-            await startAnimating()
-            tableView.reloadData()
-            if !viewModel.data.isEmpty {
-                scrollToFirstRow()
-            }
-            await stopAnimating()
-        }
+        reloadTableView()
     }
     
     func tapOnTextOnly() {
         style = .textOnly
+        reloadTableView()
+    }
+    
+    func reloadTableView() {
         Task {
             await startAnimating()
             tableView.reloadData()
@@ -186,7 +151,10 @@ extension HomeVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let vc = CardDetailVC()
+        let data = viewModel.data[indexPath.row]
+        vc.viewModel = CardDetailViewModel(card: data)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -201,7 +169,7 @@ extension HomeVC: UITableViewDataSource {
             let cell = tableView.reuse(ImageCardCell.self,for: indexPath)
             cell.selectionStyle = .none
             let card = viewModel.data[indexPath.row]
-            cell.cardVM = CardViewModel(card: card)
+            cell.cardVM = CardDetailViewModel(card: card)
             cell.clicked = {
                 self.viewModel.data[indexPath.row].isFlipped.toggle()
                 cell.flipImage()

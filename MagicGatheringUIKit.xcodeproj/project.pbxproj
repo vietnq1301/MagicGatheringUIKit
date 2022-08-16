@@ -15,6 +15,9 @@
 		A828EA11287B068C00A60336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A828EA0F287B068C00A60336 /* LaunchScreen.storyboard */; };
 		A85A7D492882D873000AE8E3 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A7D482882D873000AE8E3 /* BaseTabBarController.swift */; };
 		A86AF79B28ABA2F200C118F9 /* CardDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86AF79A28ABA2F200C118F9 /* CardDetailVC.swift */; };
+		A86AF7BD28ABDF5700C118F9 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86AF7BC28ABDF5700C118F9 /* VerticalStackView.swift */; };
+		A86AF7BF28ABE0E700C118F9 /* Init+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86AF7BE28ABE0E700C118F9 /* Init+Ext.swift */; };
+		A86AF7C128ABE5A900C118F9 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86AF7C028ABE5A900C118F9 /* Divider.swift */; };
 		A8725B9728A7E2D200971039 /* TextOnlyCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8725B9628A7E2D200971039 /* TextOnlyCardCell.swift */; };
 		A8725B9928A7E2F900971039 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8725B9828A7E2F900971039 /* Cell+Extension.swift */; };
 		A89C11A928A8D75B00724474 /* CheckListCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C11A828A8D75B00724474 /* CheckListCardViewModel.swift */; };
@@ -29,7 +32,6 @@
 		A8BD038228845FA600AC70DD /* UISearchTextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD038128845FA600AC70DD /* UISearchTextField+Ext.swift */; };
 		A8BD03892884617E00AC70DD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD03882884617E00AC70DD /* BaseViewController.swift */; };
 		A8BD038B288461AE00AC70DD /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD038A288461AE00AC70DD /* UIView+Ext.swift */; };
-		A8C212BF2885B19E00938A5A /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C212BE2885B19E00938A5A /* HeaderCell.swift */; };
 		A8E5F3A6288280F800A410D2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3A2288280F800A410D2 /* String+Ext.swift */; };
 		A8E5F3A7288280F800A410D2 /* URLSession+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3A3288280F800A410D2 /* URLSession+Ext.swift */; };
 		A8E5F3A8288280F800A410D2 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3A4288280F800A410D2 /* Color+Ext.swift */; };
@@ -47,7 +49,7 @@
 		A8E5F3BF2882818800A410D2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3BE2882818800A410D2 /* HomeVC.swift */; };
 		A8E5F3C12882991200A410D2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3C02882991200A410D2 /* HomeViewModel.swift */; };
 		A8E5F3E72882A4A000A410D2 /* CheckListCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3E62882A4A000A410D2 /* CheckListCardCell.swift */; };
-		A8E5F3E92882A92E00A410D2 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3E82882A92E00A410D2 /* CardViewModel.swift */; };
+		A8E5F3E92882A92E00A410D2 /* CardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3E82882A92E00A410D2 /* CardDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,9 @@
 		A828EA12287B068C00A60336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A85A7D482882D873000AE8E3 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		A86AF79A28ABA2F200C118F9 /* CardDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailVC.swift; sourceTree = "<group>"; };
+		A86AF7BC28ABDF5700C118F9 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		A86AF7BE28ABE0E700C118F9 /* Init+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Init+Ext.swift"; sourceTree = "<group>"; };
+		A86AF7C028ABE5A900C118F9 /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
 		A8725B9628A7E2D200971039 /* TextOnlyCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOnlyCardCell.swift; sourceTree = "<group>"; };
 		A8725B9828A7E2F900971039 /* Cell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
 		A89C11A828A8D75B00724474 /* CheckListCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCardViewModel.swift; sourceTree = "<group>"; };
@@ -71,7 +76,6 @@
 		A8BD038128845FA600AC70DD /* UISearchTextField+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchTextField+Ext.swift"; sourceTree = "<group>"; };
 		A8BD03882884617E00AC70DD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A8BD038A288461AE00AC70DD /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
-		A8C212BE2885B19E00938A5A /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		A8E5F3A2288280F800A410D2 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		A8E5F3A3288280F800A410D2 /* URLSession+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Ext.swift"; sourceTree = "<group>"; };
 		A8E5F3A4288280F800A410D2 /* Color+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
@@ -89,7 +93,7 @@
 		A8E5F3BE2882818800A410D2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A8E5F3C02882991200A410D2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A8E5F3E62882A4A000A410D2 /* CheckListCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCardCell.swift; sourceTree = "<group>"; };
-		A8E5F3E82882A92E00A410D2 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		A8E5F3E82882A92E00A410D2 /* CardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,8 @@
 		A885895F2881B81A00799ABB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A86AF7BC28ABDF5700C118F9 /* VerticalStackView.swift */,
+				A86AF7C028ABE5A900C118F9 /* Divider.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -206,7 +212,7 @@
 			children = (
 				A89C11A728A8D74A00724474 /* Cell */,
 				A8E5F3C02882991200A410D2 /* HomeViewModel.swift */,
-				A8E5F3E82882A92E00A410D2 /* CardViewModel.swift */,
+				A8E5F3E82882A92E00A410D2 /* CardDetailViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 				A8BD038A288461AE00AC70DD /* UIView+Ext.swift */,
 				A8725B9828A7E2F900971039 /* Cell+Extension.swift */,
 				A89C11AA28A8E26300724474 /* SVG.swift */,
+				A86AF7BE28ABE0E700C118F9 /* Init+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -249,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				A8E5F3E62882A4A000A410D2 /* CheckListCardCell.swift */,
-				A8C212BE2885B19E00938A5A /* HeaderCell.swift */,
 				A8BC381F28A211C200980FEB /* ImageCardCell.swift */,
 				A8725B9628A7E2D200971039 /* TextOnlyCardCell.swift */,
 			);
@@ -339,15 +345,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E5F3C12882991200A410D2 /* HomeViewModel.swift in Sources */,
+				A86AF7C128ABE5A900C118F9 /* Divider.swift in Sources */,
+				A86AF7BD28ABDF5700C118F9 /* VerticalStackView.swift in Sources */,
 				A8B32AF728AB30FE00979A8B /* Constants.swift in Sources */,
 				A8E5F3AD2882810300A410D2 /* APIEndpoint.swift in Sources */,
 				A8E5F3BD2882811100A410D2 /* CardImagery.swift in Sources */,
 				A8E5F3BC2882811100A410D2 /* CardLegality.swift in Sources */,
-				A8C212BF2885B19E00938A5A /* HeaderCell.swift in Sources */,
 				A8AE58B528A918480091929F /* CardRelatedUri.swift in Sources */,
-				A8E5F3E92882A92E00A410D2 /* CardViewModel.swift in Sources */,
+				A8E5F3E92882A92E00A410D2 /* CardDetailViewModel.swift in Sources */,
 				A8BD03892884617E00AC70DD /* BaseViewController.swift in Sources */,
 				A8E5F3BF2882818800A410D2 /* HomeVC.swift in Sources */,
+				A86AF7BF28ABE0E700C118F9 /* Init+Ext.swift in Sources */,
 				A8E5F3B62882811100A410D2 /* CardFace.swift in Sources */,
 				A828EA05287B068B00A60336 /* AppDelegate.swift in Sources */,
 				A8AE58B728A94C660091929F /* TextOnlyCardViewModel.swift in Sources */,

@@ -10,10 +10,7 @@ import SwiftUI
 import SnapKit
 
 class CheckListCardCell: UITableViewCell {
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+
     var cardVM: CheckListCardViewModel? {
         didSet {
             guard let cardVM = cardVM else {
@@ -27,47 +24,12 @@ class CheckListCardCell: UITableViewCell {
         }
     }
     
-    let containerView: UIView =  {
-        let view = UIView()
-        return view
-    }()
-    
-    let lbSet: UILabel = {
-        let label = UILabel()
-        label.text = "Set"
-        return label
-    }()
-    
-    let lbNumber: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-    
-        label.text = "Number"
-        return label
-    }()
-    
-    
-    let stackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.alignment = .leading
-        stackView.axis = .vertical
-        return stackView
-    }()
-    
-    let lbName: UILabel = {
-        let label = UILabel()
-        label.text = "Name"
-        label.numberOfLines = 1
-        label.lineBreakMode = .byTruncatingTail
-        return label
-    }()
-    
-    let lbMana: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 1
-        label.lineBreakMode = .byTruncatingTail
-        return label
-    }()
+    let containerView = UIView()
+    private let lbSet = UILabel(title: "Set")
+    private let lbNumber = UILabel(title: "Number",alignment: .center)
+    private let lbName = UILabel(title: "Name")
+    private let lbMana = UILabel(title: "Mana")
+    private let stackView = VerticalStackView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -99,6 +61,10 @@ class CheckListCardCell: UITableViewCell {
         }
         
         containerView.addBorder(to: .top, in: .lightGray, width: 1)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
