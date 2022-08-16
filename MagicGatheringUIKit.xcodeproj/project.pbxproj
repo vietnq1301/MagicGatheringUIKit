@@ -7,23 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A81C7D73289D6C2F0053640E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A81C7D72289D6C2F0053640E /* SnapKit */; };
+		A81C7D76289D6C3E0053640E /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = A81C7D75289D6C3E0053640E /* NVActivityIndicatorView */; };
 		A828EA05287B068B00A60336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828EA04287B068B00A60336 /* AppDelegate.swift */; };
 		A828EA07287B068B00A60336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828EA06287B068B00A60336 /* SceneDelegate.swift */; };
-		A828EA09287B068B00A60336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828EA08287B068B00A60336 /* ViewController.swift */; };
-		A828EA0C287B068B00A60336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A828EA0A287B068B00A60336 /* Main.storyboard */; };
 		A828EA0E287B068C00A60336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A828EA0D287B068C00A60336 /* Assets.xcassets */; };
 		A828EA11287B068C00A60336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A828EA0F287B068C00A60336 /* LaunchScreen.storyboard */; };
+		A85A7D492882D873000AE8E3 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A7D482882D873000AE8E3 /* BaseTabBarController.swift */; };
+		A86AF79B28ABA2F200C118F9 /* CardDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86AF79A28ABA2F200C118F9 /* CardDetailVC.swift */; };
+		A8725B9728A7E2D200971039 /* TextOnlyCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8725B9628A7E2D200971039 /* TextOnlyCardCell.swift */; };
+		A8725B9928A7E2F900971039 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8725B9828A7E2F900971039 /* Cell+Extension.swift */; };
+		A89C11A928A8D75B00724474 /* CheckListCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C11A828A8D75B00724474 /* CheckListCardViewModel.swift */; };
+		A89C11AB28A8E26300724474 /* SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C11AA28A8E26300724474 /* SVG.swift */; };
+		A89C11AE28A8E30500724474 /* PocketSVG in Frameworks */ = {isa = PBXBuildFile; productRef = A89C11AD28A8E30500724474 /* PocketSVG */; };
+		A89C11B028A917EF00724474 /* CardPurchaseUri.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C11AF28A917EF00724474 /* CardPurchaseUri.swift */; };
+		A8AE58B528A918480091929F /* CardRelatedUri.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AE58B428A918480091929F /* CardRelatedUri.swift */; };
+		A8AE58B728A94C660091929F /* TextOnlyCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AE58B628A94C660091929F /* TextOnlyCardViewModel.swift */; };
+		A8B32AF728AB30FE00979A8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B32AF628AB30FE00979A8B /* Constants.swift */; };
+		A8BC382028A211C200980FEB /* ImageCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BC381F28A211C200980FEB /* ImageCardCell.swift */; };
+		A8BC382328A2123600980FEB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A8BC382228A2123600980FEB /* Kingfisher */; };
+		A8BD038228845FA600AC70DD /* UISearchTextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD038128845FA600AC70DD /* UISearchTextField+Ext.swift */; };
+		A8BD03892884617E00AC70DD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD03882884617E00AC70DD /* BaseViewController.swift */; };
+		A8BD038B288461AE00AC70DD /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD038A288461AE00AC70DD /* UIView+Ext.swift */; };
+		A8C212BF2885B19E00938A5A /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C212BE2885B19E00938A5A /* HeaderCell.swift */; };
+		A8E5F3A6288280F800A410D2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3A2288280F800A410D2 /* String+Ext.swift */; };
+		A8E5F3A7288280F800A410D2 /* URLSession+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3A3288280F800A410D2 /* URLSession+Ext.swift */; };
+		A8E5F3A8288280F800A410D2 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3A4288280F800A410D2 /* Color+Ext.swift */; };
+		A8E5F3A9288280F800A410D2 /* UIScreen+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3A5288280F800A410D2 /* UIScreen+Ext.swift */; };
+		A8E5F3AC2882810300A410D2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3AA2882810300A410D2 /* API.swift */; };
+		A8E5F3AD2882810300A410D2 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3AB2882810300A410D2 /* APIEndpoint.swift */; };
+		A8E5F3B62882811100A410D2 /* CardFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3AE2882811100A410D2 /* CardFace.swift */; };
+		A8E5F3B72882811100A410D2 /* CardPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3AF2882811100A410D2 /* CardPrice.swift */; };
+		A8E5F3B82882811100A410D2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3B02882811100A410D2 /* Card.swift */; };
+		A8E5F3B92882811100A410D2 /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3B12882811100A410D2 /* Catalog.swift */; };
+		A8E5F3BA2882811100A410D2 /* ManaSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3B22882811100A410D2 /* ManaSymbol.swift */; };
+		A8E5F3BB2882811100A410D2 /* RelatedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3B32882811100A410D2 /* RelatedCard.swift */; };
+		A8E5F3BC2882811100A410D2 /* CardLegality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3B42882811100A410D2 /* CardLegality.swift */; };
+		A8E5F3BD2882811100A410D2 /* CardImagery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3B52882811100A410D2 /* CardImagery.swift */; };
+		A8E5F3BF2882818800A410D2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3BE2882818800A410D2 /* HomeVC.swift */; };
+		A8E5F3C12882991200A410D2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3C02882991200A410D2 /* HomeViewModel.swift */; };
+		A8E5F3E72882A4A000A410D2 /* CheckListCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3E62882A4A000A410D2 /* CheckListCardCell.swift */; };
+		A8E5F3E92882A92E00A410D2 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F3E82882A92E00A410D2 /* CardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A828EA01287B068B00A60336 /* MagicGatheringUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicGatheringUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A828EA04287B068B00A60336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A828EA06287B068B00A60336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A828EA08287B068B00A60336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A828EA0B287B068B00A60336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A828EA0D287B068C00A60336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A828EA10287B068C00A60336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A828EA12287B068C00A60336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A85A7D482882D873000AE8E3 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		A86AF79A28ABA2F200C118F9 /* CardDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailVC.swift; sourceTree = "<group>"; };
+		A8725B9628A7E2D200971039 /* TextOnlyCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOnlyCardCell.swift; sourceTree = "<group>"; };
+		A8725B9828A7E2F900971039 /* Cell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
+		A89C11A828A8D75B00724474 /* CheckListCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCardViewModel.swift; sourceTree = "<group>"; };
+		A89C11AA28A8E26300724474 /* SVG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVG.swift; sourceTree = "<group>"; };
+		A89C11AF28A917EF00724474 /* CardPurchaseUri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPurchaseUri.swift; sourceTree = "<group>"; };
+		A8AE58B428A918480091929F /* CardRelatedUri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRelatedUri.swift; sourceTree = "<group>"; };
+		A8AE58B628A94C660091929F /* TextOnlyCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOnlyCardViewModel.swift; sourceTree = "<group>"; };
+		A8B32AF628AB30FE00979A8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A8BC381F28A211C200980FEB /* ImageCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardCell.swift; sourceTree = "<group>"; };
+		A8BD038128845FA600AC70DD /* UISearchTextField+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchTextField+Ext.swift"; sourceTree = "<group>"; };
+		A8BD03882884617E00AC70DD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A8BD038A288461AE00AC70DD /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		A8C212BE2885B19E00938A5A /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		A8E5F3A2288280F800A410D2 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		A8E5F3A3288280F800A410D2 /* URLSession+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Ext.swift"; sourceTree = "<group>"; };
+		A8E5F3A4288280F800A410D2 /* Color+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		A8E5F3A5288280F800A410D2 /* UIScreen+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Ext.swift"; sourceTree = "<group>"; };
+		A8E5F3AA2882810300A410D2 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A8E5F3AB2882810300A410D2 /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		A8E5F3AE2882811100A410D2 /* CardFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFace.swift; sourceTree = "<group>"; };
+		A8E5F3AF2882811100A410D2 /* CardPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPrice.swift; sourceTree = "<group>"; };
+		A8E5F3B02882811100A410D2 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A8E5F3B12882811100A410D2 /* Catalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		A8E5F3B22882811100A410D2 /* ManaSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManaSymbol.swift; sourceTree = "<group>"; };
+		A8E5F3B32882811100A410D2 /* RelatedCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedCard.swift; sourceTree = "<group>"; };
+		A8E5F3B42882811100A410D2 /* CardLegality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardLegality.swift; sourceTree = "<group>"; };
+		A8E5F3B52882811100A410D2 /* CardImagery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardImagery.swift; sourceTree = "<group>"; };
+		A8E5F3BE2882818800A410D2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A8E5F3C02882991200A410D2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A8E5F3E62882A4A000A410D2 /* CheckListCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCardCell.swift; sourceTree = "<group>"; };
+		A8E5F3E82882A92E00A410D2 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BC382328A2123600980FEB /* Kingfisher in Frameworks */,
+				A89C11AE28A8E30500724474 /* PocketSVG in Frameworks */,
+				A81C7D76289D6C3E0053640E /* NVActivityIndicatorView in Frameworks */,
+				A81C7D73289D6C2F0053640E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +126,134 @@
 		A828EA03287B068B00A60336 /* MagicGatheringUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A885895F2881B81A00799ABB /* Components */,
+				A828EA1B287B06AF00A60336 /* Utils */,
+				A828EA1C287B06C100A60336 /* Service */,
+				A828EA18287B069400A60336 /* Model */,
+				A828EA1A287B06A700A60336 /* View */,
+				A828EA19287B06A100A60336 /* ViewModel */,
 				A828EA04287B068B00A60336 /* AppDelegate.swift */,
 				A828EA06287B068B00A60336 /* SceneDelegate.swift */,
-				A828EA08287B068B00A60336 /* ViewController.swift */,
-				A828EA0A287B068B00A60336 /* Main.storyboard */,
 				A828EA0D287B068C00A60336 /* Assets.xcassets */,
 				A828EA0F287B068C00A60336 /* LaunchScreen.storyboard */,
 				A828EA12287B068C00A60336 /* Info.plist */,
 			);
 			path = MagicGatheringUIKit;
+			sourceTree = "<group>";
+		};
+		A828EA18287B069400A60336 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8E5F3B02882811100A410D2 /* Card.swift */,
+				A8E5F3AE2882811100A410D2 /* CardFace.swift */,
+				A8E5F3B52882811100A410D2 /* CardImagery.swift */,
+				A8E5F3B42882811100A410D2 /* CardLegality.swift */,
+				A8E5F3AF2882811100A410D2 /* CardPrice.swift */,
+				A8E5F3B22882811100A410D2 /* ManaSymbol.swift */,
+				A8E5F3B32882811100A410D2 /* RelatedCard.swift */,
+				A89C11AF28A917EF00724474 /* CardPurchaseUri.swift */,
+				A8AE58B428A918480091929F /* CardRelatedUri.swift */,
+				A8E5F3B12882811100A410D2 /* Catalog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A828EA19287B06A100A60336 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A89C11A628A8D73A00724474 /* Home */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A828EA1A287B06A700A60336 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A85A7D482882D873000AE8E3 /* BaseTabBarController.swift */,
+				A8BD03882884617E00AC70DD /* BaseViewController.swift */,
+				A8E5F3E42882A48000A410D2 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A828EA1B287B06AF00A60336 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A8B32AF528AB30EA00979A8B /* Extension */,
+				A8B32AF628AB30FE00979A8B /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A828EA1C287B06C100A60336 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A8E5F3AA2882810300A410D2 /* API.swift */,
+				A8E5F3AB2882810300A410D2 /* APIEndpoint.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A885895F2881B81A00799ABB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A89C11A628A8D73A00724474 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A89C11A728A8D74A00724474 /* Cell */,
+				A8E5F3C02882991200A410D2 /* HomeViewModel.swift */,
+				A8E5F3E82882A92E00A410D2 /* CardViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A89C11A728A8D74A00724474 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A89C11A828A8D75B00724474 /* CheckListCardViewModel.swift */,
+				A8AE58B628A94C660091929F /* TextOnlyCardViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A8B32AF528AB30EA00979A8B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8E5F3A4288280F800A410D2 /* Color+Ext.swift */,
+				A8E5F3A2288280F800A410D2 /* String+Ext.swift */,
+				A8E5F3A5288280F800A410D2 /* UIScreen+Ext.swift */,
+				A8E5F3A3288280F800A410D2 /* URLSession+Ext.swift */,
+				A8BD038128845FA600AC70DD /* UISearchTextField+Ext.swift */,
+				A8BD038A288461AE00AC70DD /* UIView+Ext.swift */,
+				A8725B9828A7E2F900971039 /* Cell+Extension.swift */,
+				A89C11AA28A8E26300724474 /* SVG.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A8E5F3E42882A48000A410D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A8E5F3E52882A48B00A410D2 /* Cell */,
+				A8E5F3BE2882818800A410D2 /* HomeVC.swift */,
+				A86AF79A28ABA2F200C118F9 /* CardDetailVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A8E5F3E52882A48B00A410D2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A8E5F3E62882A4A000A410D2 /* CheckListCardCell.swift */,
+				A8C212BE2885B19E00938A5A /* HeaderCell.swift */,
+				A8BC381F28A211C200980FEB /* ImageCardCell.swift */,
+				A8725B9628A7E2D200971039 /* TextOnlyCardCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +272,12 @@
 			dependencies = (
 			);
 			name = MagicGatheringUIKit;
+			packageProductDependencies = (
+				A81C7D72289D6C2F0053640E /* SnapKit */,
+				A81C7D75289D6C3E0053640E /* NVActivityIndicatorView */,
+				A8BC382228A2123600980FEB /* Kingfisher */,
+				A89C11AD28A8E30500724474 /* PocketSVG */,
+			);
 			productName = MagicGatheringUIKit;
 			productReference = A828EA01287B068B00A60336 /* MagicGatheringUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +306,12 @@
 				Base,
 			);
 			mainGroup = A828E9F8287B068B00A60336;
+			packageReferences = (
+				A81C7D71289D6C2F0053640E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A81C7D74289D6C3E0053640E /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				A8BC382128A2123600980FEB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				A89C11AC28A8E30500724474 /* XCRemoteSwiftPackageReference "PocketSVG" */,
+			);
 			productRefGroup = A828EA02287B068B00A60336 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +328,6 @@
 			files = (
 				A828EA11287B068C00A60336 /* LaunchScreen.storyboard in Resources */,
 				A828EA0E287B068C00A60336 /* Assets.xcassets in Resources */,
-				A828EA0C287B068B00A60336 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +338,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A828EA09287B068B00A60336 /* ViewController.swift in Sources */,
+				A8E5F3C12882991200A410D2 /* HomeViewModel.swift in Sources */,
+				A8B32AF728AB30FE00979A8B /* Constants.swift in Sources */,
+				A8E5F3AD2882810300A410D2 /* APIEndpoint.swift in Sources */,
+				A8E5F3BD2882811100A410D2 /* CardImagery.swift in Sources */,
+				A8E5F3BC2882811100A410D2 /* CardLegality.swift in Sources */,
+				A8C212BF2885B19E00938A5A /* HeaderCell.swift in Sources */,
+				A8AE58B528A918480091929F /* CardRelatedUri.swift in Sources */,
+				A8E5F3E92882A92E00A410D2 /* CardViewModel.swift in Sources */,
+				A8BD03892884617E00AC70DD /* BaseViewController.swift in Sources */,
+				A8E5F3BF2882818800A410D2 /* HomeVC.swift in Sources */,
+				A8E5F3B62882811100A410D2 /* CardFace.swift in Sources */,
 				A828EA05287B068B00A60336 /* AppDelegate.swift in Sources */,
+				A8AE58B728A94C660091929F /* TextOnlyCardViewModel.swift in Sources */,
+				A8E5F3A9288280F800A410D2 /* UIScreen+Ext.swift in Sources */,
+				A8E5F3B92882811100A410D2 /* Catalog.swift in Sources */,
+				A8BD038B288461AE00AC70DD /* UIView+Ext.swift in Sources */,
+				A89C11A928A8D75B00724474 /* CheckListCardViewModel.swift in Sources */,
+				A8725B9728A7E2D200971039 /* TextOnlyCardCell.swift in Sources */,
+				A8E5F3BA2882811100A410D2 /* ManaSymbol.swift in Sources */,
+				A8E5F3E72882A4A000A410D2 /* CheckListCardCell.swift in Sources */,
+				A8E5F3B72882811100A410D2 /* CardPrice.swift in Sources */,
+				A8E5F3A6288280F800A410D2 /* String+Ext.swift in Sources */,
+				A85A7D492882D873000AE8E3 /* BaseTabBarController.swift in Sources */,
+				A89C11B028A917EF00724474 /* CardPurchaseUri.swift in Sources */,
+				A8E5F3B82882811100A410D2 /* Card.swift in Sources */,
+				A8E5F3A7288280F800A410D2 /* URLSession+Ext.swift in Sources */,
+				A8BC382028A211C200980FEB /* ImageCardCell.swift in Sources */,
+				A8BD038228845FA600AC70DD /* UISearchTextField+Ext.swift in Sources */,
+				A8725B9928A7E2F900971039 /* Cell+Extension.swift in Sources */,
 				A828EA07287B068B00A60336 /* SceneDelegate.swift in Sources */,
+				A86AF79B28ABA2F200C118F9 /* CardDetailVC.swift in Sources */,
+				A8E5F3BB2882811100A410D2 /* RelatedCard.swift in Sources */,
+				A8E5F3AC2882810300A410D2 /* API.swift in Sources */,
+				A8E5F3A8288280F800A410D2 /* Color+Ext.swift in Sources */,
+				A89C11AB28A8E26300724474 /* SVG.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A828EA0A287B068B00A60336 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A828EA0B287B068B00A60336 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A828EA0F287B068C00A60336 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,9 +515,9 @@
 				INFOPLIST_FILE = MagicGatheringUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +525,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = viet1301.ios.MagicGatheringUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,9 +545,9 @@
 				INFOPLIST_FILE = MagicGatheringUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +555,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = viet1301.ios.MagicGatheringUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -356,6 +586,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A81C7D71289D6C2F0053640E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		A81C7D74289D6C3E0053640E /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A89C11AC28A8E30500724474 /* XCRemoteSwiftPackageReference "PocketSVG" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pocketsvg/PocketSVG";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		A8BC382128A2123600980FEB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A81C7D72289D6C2F0053640E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A81C7D71289D6C2F0053640E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A81C7D75289D6C3E0053640E /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A81C7D74289D6C3E0053640E /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		A89C11AD28A8E30500724474 /* PocketSVG */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A89C11AC28A8E30500724474 /* XCRemoteSwiftPackageReference "PocketSVG" */;
+			productName = PocketSVG;
+		};
+		A8BC382228A2123600980FEB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8BC382128A2123600980FEB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A828E9F9287B068B00A60336 /* Project object */;
 }
